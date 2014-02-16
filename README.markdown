@@ -5,3 +5,5 @@ Installation:
 Create symlinks:
   
     ln -s ~/<dotfiles>/vimrc ~/.vimrc
+
+    Example:ln -s ~/.vim/vimrc ~/.vimrc
