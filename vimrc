@@ -3,6 +3,7 @@ call pathogen#helptags()
 
 " execute pathogen#infect()
 set nocompatible
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 syntax enable
 " Molokai scheme color
@@ -67,7 +68,7 @@ map <D-9> 9gt
 map <D-t> :tabnew<CR>
 map <D-w> :tabclose<CR>
 map <D-0> :tablast<CR>
-
+" imap <C-d> <C-[>diwi
 let mapleader=","
 " map <leader>c <c-_><c-_>   "Hot key <\c> too slow
 filetype off
@@ -80,4 +81,5 @@ syntax on
 " autocmd BufWritePost *.go silent! !ctags -R &
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 autocmd FileType go compiler go
+let g:gofmt_command = 'goimports'
 
